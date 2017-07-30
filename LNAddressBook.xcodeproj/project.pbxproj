@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D1ADDBF1F2DBF940049793C /* ManContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ADDBE1F2DBF940049793C /* ManContactManager.swift */; };
+		8D1ADDC11F2DD88A0049793C /* String+Pinyin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ADDC01F2DD88A0049793C /* String+Pinyin.swift */; };
+		8D3D857A1F2C1BF8001D6ADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85791F2C1BF8001D6ADF /* AppDelegate.swift */; };
+		8D3D85811F2C1BF8001D6ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */; };
+		8D3D85841F2C1BF8001D6ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D85821F2C1BF8001D6ADF /* LaunchScreen.storyboard */; };
+		8D3D85941F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85931F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift */; };
+		8D3D859E1F2D7B82001D6ADF /* LNAddContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D859B1F2D7B82001D6ADF /* LNAddContactVC.swift */; };
+		8D3D859F1F2D7B82001D6ADF /* LNAddressBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D859D1F2D7B82001D6ADF /* LNAddressBookVC.swift */; };
+		8D3D85A11F2D7C82001D6ADF /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85A01F2D7C82001D6ADF /* CommonUtility.swift */; };
+		8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */; };
+		8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */; };
+		8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */; };
+		E28FC663F68ACC22DD216D27 /* Pods_LNAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BD085D7642FA3F612C0979 /* Pods_LNAddressBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46BD085D7642FA3F612C0979 /* Pods_LNAddressBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1ADDBE1F2DBF940049793C /* ManContactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManContactManager.swift; sourceTree = "<group>"; };
+		8D1ADDC01F2DD88A0049793C /* String+Pinyin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Pinyin.swift"; sourceTree = "<group>"; };
+		8D3D85761F2C1BF8001D6ADF /* LNAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3D85791F2C1BF8001D6ADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3D85831F2C1BF8001D6ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D3D85851F2C1BF8001D6ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3D85931F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ManBlock.swift"; sourceTree = "<group>"; };
+		8D3D859B1F2D7B82001D6ADF /* LNAddContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddContactVC.swift; sourceTree = "<group>"; };
+		8D3D859D1F2D7B82001D6ADF /* LNAddressBookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookVC.swift; sourceTree = "<group>"; };
+		8D3D85A01F2D7C82001D6ADF /* CommonUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
+		8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookTableView.swift; sourceTree = "<group>"; };
+		8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookSearchVC.swift; sourceTree = "<group>"; };
+		8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchController+Helper.swift"; sourceTree = "<group>"; };
+		A906BF89AF1AA0D16EC6D63F /* Pods-LNAddressBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAddressBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook.debug.xcconfig"; sourceTree = "<group>"; };
+		D22D953E9EC73C6F591A644D /* Pods-LNAddressBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAddressBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D3D85731F2C1BF7001D6ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28FC663F68ACC22DD216D27 /* Pods_LNAddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D3D856D1F2C1BF7001D6ADF = {
+			isa = PBXGroup;
+			children = (
+				8D3D85781F2C1BF8001D6ADF /* LNAddressBook */,
+				8D3D85771F2C1BF8001D6ADF /* Products */,
+				8FB3C2EA109C04831364D314 /* Pods */,
+				D5E3D7444CF72C1FC61169FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D3D85771F2C1BF8001D6ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D85761F2C1BF8001D6ADF /* LNAddressBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D3D85781F2C1BF8001D6ADF /* LNAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D858B1F2C1C71001D6ADF /* LNAddressBook */,
+				8D3D85791F2C1BF8001D6ADF /* AppDelegate.swift */,
+				8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */,
+				8D3D85821F2C1BF8001D6ADF /* LaunchScreen.storyboard */,
+				8D3D85851F2C1BF8001D6ADF /* Info.plist */,
+			);
+			path = LNAddressBook;
+			sourceTree = "<group>";
+		};
+		8D3D858B1F2C1C71001D6ADF /* LNAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D858D1F2C1D94001D6ADF /* LNAddressBookUI */,
+				8D3D858C1F2C1D7F001D6ADF /* LNContactManager */,
+				8D3D85901F2C2323001D6ADF /* Helper */,
+			);
+			path = LNAddressBook;
+			sourceTree = "<group>";
+		};
+		8D3D858C1F2C1D7F001D6ADF /* LNContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				8D1ADDBE1F2DBF940049793C /* ManContactManager.swift */,
+			);
+			path = LNContactManager;
+			sourceTree = "<group>";
+		};
+		8D3D858D1F2C1D94001D6ADF /* LNAddressBookUI */ = {
+			isa = PBXGroup;
+			children = (
+				8D459FEB1F2E170A00964BB2 /* Search */,
+				8D3D859A1F2D7B82001D6ADF /* AddContact */,
+				8D3D859C1F2D7B82001D6ADF /* AddressBook */,
+			);
+			path = LNAddressBookUI;
+			sourceTree = "<group>";
+		};
+		8D3D85901F2C2323001D6ADF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D85931F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift */,
+				8D3D85A01F2D7C82001D6ADF /* CommonUtility.swift */,
+				8D1ADDC01F2DD88A0049793C /* String+Pinyin.swift */,
+				8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8D3D859A1F2D7B82001D6ADF /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D859B1F2D7B82001D6ADF /* LNAddContactVC.swift */,
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		8D3D859C1F2D7B82001D6ADF /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D859D1F2D7B82001D6ADF /* LNAddressBookVC.swift */,
+				8D3D85A21F2D80D4001D6ADF /* subview */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		8D3D85A21F2D80D4001D6ADF /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */,
+			);
+			path = subview;
+			sourceTree = "<group>";
+		};
+		8D459FEB1F2E170A00964BB2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */,
+			);
+			name = Search;
+			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		8FB3C2EA109C04831364D314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A906BF89AF1AA0D16EC6D63F /* Pods-LNAddressBook.debug.xcconfig */,
+				D22D953E9EC73C6F591A644D /* Pods-LNAddressBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5E3D7444CF72C1FC61169FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BD085D7642FA3F612C0979 /* Pods_LNAddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D3D85751F2C1BF7001D6ADF /* LNAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3D85881F2C1BF8001D6ADF /* Build configuration list for PBXNativeTarget "LNAddressBook" */;
+			buildPhases = (
+				7464849E7E5FEFFA6CBA09B5 /* [CP] Check Pods Manifest.lock */,
+				8D3D85721F2C1BF7001D6ADF /* Sources */,
+				8D3D85731F2C1BF7001D6ADF /* Frameworks */,
+				8D3D85741F2C1BF7001D6ADF /* Resources */,
+				98730F922157FE22EB023BE2 /* [CP] Embed Pods Frameworks */,
+				16C390323F460C63C189C9CB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LNAddressBook;
+			productName = LNAddressBook;
+			productReference = 8D3D85761F2C1BF8001D6ADF /* LNAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D3D856E1F2C1BF7001D6ADF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.man.www;
+				TargetAttributes = {
+					8D3D85751F2C1BF7001D6ADF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82XGZDMK99;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8D3D85711F2C1BF7001D6ADF /* Build configuration list for PBXProject "LNAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D3D856D1F2C1BF7001D6ADF;
+			productRefGroup = 8D3D85771F2C1BF8001D6ADF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D3D85751F2C1BF7001D6ADF /* LNAddressBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D3D85741F2C1BF7001D6ADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3D85841F2C1BF8001D6ADF /* LaunchScreen.storyboard in Resources */,
+				8D3D85811F2C1BF8001D6ADF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16C390323F460C63C189C9CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7464849E7E5FEFFA6CBA09B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98730F922157FE22EB023BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D3D85721F2C1BF7001D6ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3D859F1F2D7B82001D6ADF /* LNAddressBookVC.swift in Sources */,
+				8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */,
+				8D3D85A11F2D7C82001D6ADF /* CommonUtility.swift in Sources */,
+				8D3D85941F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift in Sources */,
+				8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */,
+				8D3D857A1F2C1BF8001D6ADF /* AppDelegate.swift in Sources */,
+				8D1ADDBF1F2DBF940049793C /* ManContactManager.swift in Sources */,
+				8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */,
+				8D3D859E1F2D7B82001D6ADF /* LNAddContactVC.swift in Sources */,
+				8D1ADDC11F2DD88A0049793C /* String+Pinyin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D3D85821F2C1BF8001D6ADF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3D85831F2C1BF8001D6ADF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D3D85861F2C1BF8001D6ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D3D85871F2C1BF8001D6ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D3D85891F2C1BF8001D6ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A906BF89AF1AA0D16EC6D63F /* Pods-LNAddressBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82XGZDMK99;
+				INFOPLIST_FILE = LNAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.man.www.LNAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8D3D858A1F2C1BF8001D6ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22D953E9EC73C6F591A644D /* Pods-LNAddressBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82XGZDMK99;
+				INFOPLIST_FILE = LNAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.man.www.LNAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D3D85711F2C1BF7001D6ADF /* Build configuration list for PBXProject "LNAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3D85861F2C1BF8001D6ADF /* Debug */,
+				8D3D85871F2C1BF8001D6ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3D85881F2C1BF8001D6ADF /* Build configuration list for PBXNativeTarget "LNAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3D85891F2C1BF8001D6ADF /* Debug */,
+				8D3D858A1F2C1BF8001D6ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D3D856E1F2C1BF7001D6ADF /* Project object */;
+}
