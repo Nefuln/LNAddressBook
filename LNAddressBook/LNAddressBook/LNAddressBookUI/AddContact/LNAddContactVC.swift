@@ -22,7 +22,7 @@ class LNAddContactVC: UIViewController {
         view.backgroundColor = UIColor.white
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", image: nil, style: .plain, click: { [weak self] (item) in
             if let weakSelf = self {
-                weakSelf.backToAddressBook()
+                weakSelf.backToLastPage()
             }
         })
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "完成", image: nil, style: .plain, click: { [weak self] (item) in
@@ -34,9 +34,13 @@ class LNAddContactVC: UIViewController {
         self.navigationItem.rightBarButtonItem?.isEnabled = false
     }
     
-    private func backToAddressBook() {
-        self.navigationController?.modalTransitionStyle = .crossDissolve
-        dismiss(animated: true, completion: nil)
+    private func backToLastPage() {
+        if self.navigationController?.viewControllers.count == 1 {
+            self.navigationController?.modalTransitionStyle = .crossDissolve
+            dismiss(animated: true, completion: nil)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
     }
 
 }

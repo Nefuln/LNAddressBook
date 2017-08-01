@@ -19,6 +19,17 @@
 		8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */; };
 		8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */; };
 		8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */; };
+		8DCB173E1F2F6C2600E8CF25 /* LNDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */; };
+		8DCB17411F2F71CD00E8CF25 /* LNDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB17401F2F71CD00E8CF25 /* LNDetailHeaderView.swift */; };
+		8DCB17481F2F844700E8CF25 /* UINavigationBar+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB17471F2F844700E8CF25 /* UINavigationBar+Alpha.swift */; };
+		8DCB17551F30A51F00E8CF25 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB17511F30A51F00E8CF25 /* email.png */; };
+		8DCB17561F30A51F00E8CF25 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB17521F30A51F00E8CF25 /* message.png */; };
+		8DCB17571F30A51F00E8CF25 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB17531F30A51F00E8CF25 /* phone.png */; };
+		8DCB17581F30A51F00E8CF25 /* shipin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB17541F30A51F00E8CF25 /* shipin.png */; };
+		8DCB175A1F30A80D00E8CF25 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB17591F30A80D00E8CF25 /* NSString+Size.swift */; };
+		8DCB175C1F30BDCE00E8CF25 /* LNDetaiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB175B1F30BDCE00E8CF25 /* LNDetaiTableView.swift */; };
+		8DCB175E1F30BE7800E8CF25 /* LNDetailPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB175D1F30BE7800E8CF25 /* LNDetailPhoneCell.swift */; };
+		8DCB17601F30C75900E8CF25 /* LNDetailCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB175F1F30C75900E8CF25 /* LNDetailCommonCell.swift */; };
 		E28FC663F68ACC22DD216D27 /* Pods_LNAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BD085D7642FA3F612C0979 /* Pods_LNAddressBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +39,9 @@
 		8D1ADDC01F2DD88A0049793C /* String+Pinyin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Pinyin.swift"; sourceTree = "<group>"; };
 		8D3D85761F2C1BF8001D6ADF /* LNAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3D85791F2C1BF8001D6ADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		8D3D85831F2C1BF8001D6ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D3D85851F2C1BF8001D6ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3D85851F2C1BF8001D6ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8D3D85931F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ManBlock.swift"; sourceTree = "<group>"; };
 		8D3D859B1F2D7B82001D6ADF /* LNAddContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddContactVC.swift; sourceTree = "<group>"; };
 		8D3D859D1F2D7B82001D6ADF /* LNAddressBookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookVC.swift; sourceTree = "<group>"; };
@@ -38,6 +49,17 @@
 		8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookTableView.swift; sourceTree = "<group>"; };
 		8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookSearchVC.swift; sourceTree = "<group>"; };
 		8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchController+Helper.swift"; sourceTree = "<group>"; };
+		8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailVC.swift; sourceTree = "<group>"; };
+		8DCB17401F2F71CD00E8CF25 /* LNDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailHeaderView.swift; sourceTree = "<group>"; };
+		8DCB17471F2F844700E8CF25 /* UINavigationBar+Alpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Alpha.swift"; sourceTree = "<group>"; };
+		8DCB17511F30A51F00E8CF25 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		8DCB17521F30A51F00E8CF25 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		8DCB17531F30A51F00E8CF25 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		8DCB17541F30A51F00E8CF25 /* shipin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shipin.png; sourceTree = "<group>"; };
+		8DCB17591F30A80D00E8CF25 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
+		8DCB175B1F30BDCE00E8CF25 /* LNDetaiTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetaiTableView.swift; sourceTree = "<group>"; };
+		8DCB175D1F30BE7800E8CF25 /* LNDetailPhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailPhoneCell.swift; sourceTree = "<group>"; };
+		8DCB175F1F30C75900E8CF25 /* LNDetailCommonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailCommonCell.swift; sourceTree = "<group>"; };
 		A906BF89AF1AA0D16EC6D63F /* Pods-LNAddressBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAddressBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook.debug.xcconfig"; sourceTree = "<group>"; };
 		D22D953E9EC73C6F591A644D /* Pods-LNAddressBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAddressBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNAddressBook/Pods-LNAddressBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,11 +97,10 @@
 		8D3D85781F2C1BF8001D6ADF /* LNAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				8D3D858B1F2C1C71001D6ADF /* LNAddressBook */,
 				8D3D85791F2C1BF8001D6ADF /* AppDelegate.swift */,
-				8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */,
-				8D3D85821F2C1BF8001D6ADF /* LaunchScreen.storyboard */,
-				8D3D85851F2C1BF8001D6ADF /* Info.plist */,
+				8D3D858B1F2C1C71001D6ADF /* LNAddressBook */,
+				8DCB17431F2F76A800E8CF25 /* Resource */,
+				8DCB17421F2F768700E8CF25 /* SupportFile */,
 			);
 			path = LNAddressBook;
 			sourceTree = "<group>";
@@ -105,6 +126,7 @@
 		8D3D858D1F2C1D94001D6ADF /* LNAddressBookUI */ = {
 			isa = PBXGroup;
 			children = (
+				8DCB173C1F2F6C0200E8CF25 /* Edit */,
 				8D459FEB1F2E170A00964BB2 /* Search */,
 				8D3D859A1F2D7B82001D6ADF /* AddContact */,
 				8D3D859C1F2D7B82001D6ADF /* AddressBook */,
@@ -119,6 +141,8 @@
 				8D3D85A01F2D7C82001D6ADF /* CommonUtility.swift */,
 				8D1ADDC01F2DD88A0049793C /* String+Pinyin.swift */,
 				8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */,
+				8DCB17471F2F844700E8CF25 /* UINavigationBar+Alpha.swift */,
+				8DCB17591F30A80D00E8CF25 /* NSString+Size.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -155,6 +179,55 @@
 			);
 			name = Search;
 			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		8DCB173C1F2F6C0200E8CF25 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */,
+				8DCB173F1F2F71B400E8CF25 /* View */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		8DCB173F1F2F71B400E8CF25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB17401F2F71CD00E8CF25 /* LNDetailHeaderView.swift */,
+				8DCB175B1F30BDCE00E8CF25 /* LNDetaiTableView.swift */,
+				8DCB175D1F30BE7800E8CF25 /* LNDetailPhoneCell.swift */,
+				8DCB175F1F30C75900E8CF25 /* LNDetailCommonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DCB17421F2F768700E8CF25 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D85801F2C1BF8001D6ADF /* Assets.xcassets */,
+				8D3D85821F2C1BF8001D6ADF /* LaunchScreen.storyboard */,
+				8D3D85851F2C1BF8001D6ADF /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		8DCB17431F2F76A800E8CF25 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB17441F2F76BC00E8CF25 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8DCB17441F2F76BC00E8CF25 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB17511F30A51F00E8CF25 /* email.png */,
+				8DCB17521F30A51F00E8CF25 /* message.png */,
+				8DCB17531F30A51F00E8CF25 /* phone.png */,
+				8DCB17541F30A51F00E8CF25 /* shipin.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		8FB3C2EA109C04831364D314 /* Pods */ = {
@@ -239,6 +312,10 @@
 			files = (
 				8D3D85841F2C1BF8001D6ADF /* LaunchScreen.storyboard in Resources */,
 				8D3D85811F2C1BF8001D6ADF /* Assets.xcassets in Resources */,
+				8DCB17581F30A51F00E8CF25 /* shipin.png in Resources */,
+				8DCB17571F30A51F00E8CF25 /* phone.png in Resources */,
+				8DCB17551F30A51F00E8CF25 /* email.png in Resources */,
+				8DCB17561F30A51F00E8CF25 /* message.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +378,14 @@
 				8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */,
 				8D3D85A11F2D7C82001D6ADF /* CommonUtility.swift in Sources */,
 				8D3D85941F2C29D8001D6ADF /* UIBarButtonItem+ManBlock.swift in Sources */,
+				8DCB175A1F30A80D00E8CF25 /* NSString+Size.swift in Sources */,
+				8DCB17411F2F71CD00E8CF25 /* LNDetailHeaderView.swift in Sources */,
+				8DCB17601F30C75900E8CF25 /* LNDetailCommonCell.swift in Sources */,
+				8DCB17481F2F844700E8CF25 /* UINavigationBar+Alpha.swift in Sources */,
+				8DCB173E1F2F6C2600E8CF25 /* LNDetailVC.swift in Sources */,
 				8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */,
+				8DCB175C1F30BDCE00E8CF25 /* LNDetaiTableView.swift in Sources */,
+				8DCB175E1F30BE7800E8CF25 /* LNDetailPhoneCell.swift in Sources */,
 				8D3D857A1F2C1BF8001D6ADF /* AppDelegate.swift in Sources */,
 				8D1ADDBF1F2DBF940049793C /* ManContactManager.swift in Sources */,
 				8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */,
@@ -319,6 +403,7 @@
 				8D3D85831F2C1BF8001D6ADF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

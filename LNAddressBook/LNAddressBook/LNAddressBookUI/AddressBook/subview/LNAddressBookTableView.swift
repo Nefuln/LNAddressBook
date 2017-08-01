@@ -15,6 +15,7 @@ class LNAddressBookTableView: UITableView {
     // MARK:- Public property
     var dataArr: [String: [CNContact]]?
     var sectionIndex: [String]?
+    var cellDidSelectedBlock: ((_ contact: CNContact) -> Void)? = nil
     
     // MARK:- Public func
     func reloadWithData(_ dataArr: [String: [CNContact]]?, indexs: [String]?) {
@@ -104,6 +105,10 @@ extension LNAddressBookTableView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if (self.cellDidSelectedBlock != nil) {
+            let contact: CNContact = (self.dataArr?[(self.sectionIndex?[indexPath.section])!]![indexPath.row])!
+            cellDidSelectedBlock!(contact)
+        }
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {

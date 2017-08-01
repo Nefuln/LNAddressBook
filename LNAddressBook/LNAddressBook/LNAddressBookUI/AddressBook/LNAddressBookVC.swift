@@ -13,7 +13,12 @@ class LNAddressBookVC: UIViewController {
     
     // MARK:- Public Property
     lazy var tableView: LNAddressBookTableView = {
-        let tableView = LNAddressBookTableView(frame: CGRect(x: 0, y: 40, width: ScreenWidth, height: ScreenHeight - 104), style: .plain)
+        let tableView = LNAddressBookTableView(frame: CGRect(x: 0, y: 108, width: ScreenWidth, height: ScreenHeight - 104), style: .plain)
+        tableView.cellDidSelectedBlock = {[weak self] (contact) in
+            if let weakSelf = self {
+                weakSelf.detailPage(contact)
+            }
+        }
         return tableView
     }()
     
@@ -51,7 +56,6 @@ class LNAddressBookVC: UIViewController {
      */
     private func initUI() {
         self.navigationItem.title = "通讯录"
-        navigationController?.navigationBar.isTranslucent = false
         view.backgroundColor = UIColor.white
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, click: {[weak self] (item) in
             if let weakSelf = self {
@@ -68,7 +72,7 @@ class LNAddressBookVC: UIViewController {
      * 添加subviews
      */
     private func addSubviews() {
-        searchController.searchBar.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: 40)
+        searchController.searchBar.frame = CGRect(x: 0, y: 64, width: ScreenWidth, height: 44)
         view.addSubview(searchController.searchBar)
         view.addSubview(tableView)
     }
@@ -103,6 +107,9 @@ class LNAddressBookVC: UIViewController {
         }
     }
     
+    /**
+     * 重置所有联系人
+     */
     private func resetAllContacts(data: ([String: [CNContact]], [String])?) {
         _allContacts.removeAll()
         guard data != nil else {
@@ -113,6 +120,16 @@ class LNAddressBookVC: UIViewController {
             let arr: [CNContact] = (data?.0[key])!
             _allContacts.append(contentsOf: arr)
         }
+    }
+    
+    private func detailPage(_ contact: CNContact?) {
+        guard contact != nil else {
+            return
+        }
+        
+        let editVC = LNDetailVC()
+        editVC.contact = contact
+        navigationController?.pushViewController(editVC, animated: true)
     }
     
     // MARK:- Private Property
