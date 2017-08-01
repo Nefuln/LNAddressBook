@@ -106,9 +106,6 @@ class LNDetailHeaderView: UIView {
         let btnHeight: CGFloat  = 55.0
         let padding = (ScreenWidth - 60 - 4*btnWidth)/3
         
-        imgNameLabel.snp.makeConstraints { (make) in
-            make.edges.equalTo(imgView)
-        }
         
         messageBtn.snp.makeConstraints { (make) in
             make.bottom.equalTo(self.snp.bottom).offset(-10)
@@ -137,6 +134,13 @@ class LNDetailHeaderView: UIView {
     
     func remake() {
         
+        let font = UIFont.systemFont(ofSize: (24 - (275 - self.frame.size.height) * 0.08))
+        
+        imgNameLabel.font = font
+        imgNameLabel.snp.remakeConstraints { (make) in
+            make.edges.equalTo(imgView)
+        }
+        
         imgView.snp.remakeConstraints { (make) in
             make.centerX.equalTo(self)
             make.bottom.equalTo(self.nameLabel.snp.top).offset(-10)
@@ -145,6 +149,8 @@ class LNDetailHeaderView: UIView {
             imgView.layer.masksToBounds = true
         }
         
+        nameLabel.font = font
+        print((24 - (275 - self.frame.size.height) * 0.08))
         nameLabel.snp.remakeConstraints { (make) in
             make.centerX.equalTo(self)
             make.bottom.equalTo(messageBtn.snp.top).offset(-10)
