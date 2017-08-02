@@ -82,6 +82,7 @@ class LNAddressBookVC: UIViewController {
      */
     private func addContact() {
         let addContactVC = LNAddContactVC()
+        addContactVC.navigationItem.title = "新建联系人"
         let navi = UINavigationController(rootViewController: addContactVC)
         present(navi, animated: true, completion: nil)
     }

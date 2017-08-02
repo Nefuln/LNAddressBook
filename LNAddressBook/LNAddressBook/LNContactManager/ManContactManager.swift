@@ -15,6 +15,10 @@ class ManContactManager: NSObject, CNContactPickerDelegate {
     static let manager = ManContactManager()
     private override init() {}
     
+    // MARK:- Public
+    let request = CNSaveRequest()
+    let store = CNContactStore()
+    
     // MARK:- 跳转到通讯录页面
     private var contactSelected: ((_ contact: CNContact) -> Void)? = nil
     private var cancel: (() -> Void)? = nil
@@ -29,7 +33,6 @@ class ManContactManager: NSObject, CNContactPickerDelegate {
     
     // MARK:- 获取所有联系人信息
     //创建通讯录对象
-    private let store = CNContactStore()
     var keys = [
 //        CNContactIdentifierKey,
 //        CNContactNamePrefixKey,

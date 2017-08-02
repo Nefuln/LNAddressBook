@@ -19,6 +19,13 @@
 		8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */; };
 		8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */; };
 		8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */; };
+		8D784A0D1F3202650081B7F7 /* ManContactManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A0C1F3202650081B7F7 /* ManContactManagerExtension.swift */; };
+		8D784A101F320DDD0081B7F7 /* LNContactHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A0F1F320DDD0081B7F7 /* LNContactHeaderView.swift */; };
+		8D784A121F320DE90081B7F7 /* LNContactFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A111F320DE90081B7F7 /* LNContactFootView.swift */; };
+		8D784A141F3210920081B7F7 /* LNContactHeaderFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A131F3210920081B7F7 /* LNContactHeaderFieldView.swift */; };
+		8D784A161F3213900081B7F7 /* LNContactTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A151F3213900081B7F7 /* LNContactTableView.swift */; };
+		8D784A181F322A5F0081B7F7 /* LNContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A171F322A5F0081B7F7 /* LNContactCell.swift */; };
+		8D784A1A1F323A220081B7F7 /* LNContactCommonAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D784A191F323A220081B7F7 /* LNContactCommonAddView.swift */; };
 		8DCB173E1F2F6C2600E8CF25 /* LNDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */; };
 		8DCB17411F2F71CD00E8CF25 /* LNDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB17401F2F71CD00E8CF25 /* LNDetailHeaderView.swift */; };
 		8DCB17481F2F844700E8CF25 /* UINavigationBar+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB17471F2F844700E8CF25 /* UINavigationBar+Alpha.swift */; };
@@ -49,6 +56,13 @@
 		8D3D85A31F2D80F0001D6ADF /* LNAddressBookTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookTableView.swift; sourceTree = "<group>"; };
 		8D459FEC1F2E172F00964BB2 /* LNAddressBookSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNAddressBookSearchVC.swift; sourceTree = "<group>"; };
 		8D459FEE1F2E208B00964BB2 /* UISearchController+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchController+Helper.swift"; sourceTree = "<group>"; };
+		8D784A0C1F3202650081B7F7 /* ManContactManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManContactManagerExtension.swift; sourceTree = "<group>"; };
+		8D784A0F1F320DDD0081B7F7 /* LNContactHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactHeaderView.swift; sourceTree = "<group>"; };
+		8D784A111F320DE90081B7F7 /* LNContactFootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactFootView.swift; sourceTree = "<group>"; };
+		8D784A131F3210920081B7F7 /* LNContactHeaderFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactHeaderFieldView.swift; sourceTree = "<group>"; };
+		8D784A151F3213900081B7F7 /* LNContactTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactTableView.swift; sourceTree = "<group>"; };
+		8D784A171F322A5F0081B7F7 /* LNContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactCell.swift; sourceTree = "<group>"; };
+		8D784A191F323A220081B7F7 /* LNContactCommonAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNContactCommonAddView.swift; sourceTree = "<group>"; };
 		8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailVC.swift; sourceTree = "<group>"; };
 		8DCB17401F2F71CD00E8CF25 /* LNDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNDetailHeaderView.swift; sourceTree = "<group>"; };
 		8DCB17471F2F844700E8CF25 /* UINavigationBar+Alpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Alpha.swift"; sourceTree = "<group>"; };
@@ -119,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1ADDBE1F2DBF940049793C /* ManContactManager.swift */,
+				8D784A0C1F3202650081B7F7 /* ManContactManagerExtension.swift */,
 			);
 			path = LNContactManager;
 			sourceTree = "<group>";
@@ -126,7 +141,7 @@
 		8D3D858D1F2C1D94001D6ADF /* LNAddressBookUI */ = {
 			isa = PBXGroup;
 			children = (
-				8DCB173C1F2F6C0200E8CF25 /* Edit */,
+				8DCB173C1F2F6C0200E8CF25 /* Detail */,
 				8D459FEB1F2E170A00964BB2 /* Search */,
 				8D3D859A1F2D7B82001D6ADF /* AddContact */,
 				8D3D859C1F2D7B82001D6ADF /* AddressBook */,
@@ -151,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3D859B1F2D7B82001D6ADF /* LNAddContactVC.swift */,
+				8D784A0E1F320DC20081B7F7 /* view */,
 			);
 			path = AddContact;
 			sourceTree = "<group>";
@@ -181,12 +197,26 @@
 			path = SearchVC;
 			sourceTree = "<group>";
 		};
-		8DCB173C1F2F6C0200E8CF25 /* Edit */ = {
+		8D784A0E1F320DC20081B7F7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8D784A0F1F320DDD0081B7F7 /* LNContactHeaderView.swift */,
+				8D784A111F320DE90081B7F7 /* LNContactFootView.swift */,
+				8D784A131F3210920081B7F7 /* LNContactHeaderFieldView.swift */,
+				8D784A151F3213900081B7F7 /* LNContactTableView.swift */,
+				8D784A171F322A5F0081B7F7 /* LNContactCell.swift */,
+				8D784A191F323A220081B7F7 /* LNContactCommonAddView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8DCB173C1F2F6C0200E8CF25 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				8DCB173D1F2F6C2600E8CF25 /* LNDetailVC.swift */,
 				8DCB173F1F2F71B400E8CF25 /* View */,
 			);
+			name = Detail;
 			path = Edit;
 			sourceTree = "<group>";
 		};
@@ -374,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D784A161F3213900081B7F7 /* LNContactTableView.swift in Sources */,
 				8D3D859F1F2D7B82001D6ADF /* LNAddressBookVC.swift in Sources */,
 				8D3D85A41F2D80F0001D6ADF /* LNAddressBookTableView.swift in Sources */,
 				8D3D85A11F2D7C82001D6ADF /* CommonUtility.swift in Sources */,
@@ -381,16 +412,22 @@
 				8DCB175A1F30A80D00E8CF25 /* NSString+Size.swift in Sources */,
 				8DCB17411F2F71CD00E8CF25 /* LNDetailHeaderView.swift in Sources */,
 				8DCB17601F30C75900E8CF25 /* LNDetailCommonCell.swift in Sources */,
+				8D784A121F320DE90081B7F7 /* LNContactFootView.swift in Sources */,
 				8DCB17481F2F844700E8CF25 /* UINavigationBar+Alpha.swift in Sources */,
+				8D784A1A1F323A220081B7F7 /* LNContactCommonAddView.swift in Sources */,
 				8DCB173E1F2F6C2600E8CF25 /* LNDetailVC.swift in Sources */,
 				8D459FED1F2E172F00964BB2 /* LNAddressBookSearchVC.swift in Sources */,
+				8D784A101F320DDD0081B7F7 /* LNContactHeaderView.swift in Sources */,
 				8DCB175C1F30BDCE00E8CF25 /* LNDetaiTableView.swift in Sources */,
+				8D784A141F3210920081B7F7 /* LNContactHeaderFieldView.swift in Sources */,
 				8DCB175E1F30BE7800E8CF25 /* LNDetailPhoneCell.swift in Sources */,
 				8D3D857A1F2C1BF8001D6ADF /* AppDelegate.swift in Sources */,
 				8D1ADDBF1F2DBF940049793C /* ManContactManager.swift in Sources */,
+				8D784A0D1F3202650081B7F7 /* ManContactManagerExtension.swift in Sources */,
 				8D459FEF1F2E208B00964BB2 /* UISearchController+Helper.swift in Sources */,
 				8D3D859E1F2D7B82001D6ADF /* LNAddContactVC.swift in Sources */,
 				8D1ADDC11F2DD88A0049793C /* String+Pinyin.swift in Sources */,
+				8D784A181F322A5F0081B7F7 /* LNContactCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

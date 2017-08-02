@@ -15,4 +15,5 @@ extension UINavigationBar {
         let barBackgroundView = subviews[0]
         barBackgroundView.alpha = alpha
     }
+    
 }

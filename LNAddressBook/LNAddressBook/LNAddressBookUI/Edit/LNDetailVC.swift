@@ -83,9 +83,15 @@ class LNDetailVC: UIViewController {
         }
     }
     
+    /**
+     * 进入编辑页面
+     */
     private func edit() {
         let editVC = LNAddContactVC()
-        navigationController?.pushViewController(editVC, animated: true)
+        let navi = UINavigationController(rootViewController: editVC)
+        navi.modalTransitionStyle = .crossDissolve
+        present(navi, animated: true, completion: nil)
+
     }
     
     // MARK:- Private Property

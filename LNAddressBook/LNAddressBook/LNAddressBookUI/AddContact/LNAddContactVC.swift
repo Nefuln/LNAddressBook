@@ -18,8 +18,9 @@ class LNAddContactVC: UIViewController {
     
     // MARK:- Private func
     private func initUI() {
-        self.navigationItem.title = "新建联系人"
         view.backgroundColor = UIColor.white
+        navigationController?.navigationBar.setBackgroundAlpha(alpha: 0)
+        automaticallyAdjustsScrollViewInsets = false
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", image: nil, style: .plain, click: { [weak self] (item) in
             if let weakSelf = self {
                 weakSelf.backToLastPage()
@@ -32,6 +33,8 @@ class LNAddContactVC: UIViewController {
         })
         
         self.navigationItem.rightBarButtonItem?.isEnabled = false
+        
+        view.addSubview(tableView)
     }
     
     private func backToLastPage() {
@@ -42,5 +45,11 @@ class LNAddContactVC: UIViewController {
             navigationController?.popViewController(animated: true)
         }
     }
+    
+    // MARK:- Private property
+    private lazy var tableView: LNContactTableView = {
+        let tableView = LNContactTableView(frame: CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight - 64), style: .grouped)
+        return tableView
+    }()
 
 }

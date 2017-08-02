@@ -144,13 +144,13 @@ class LNDetailHeaderView: UIView {
         imgView.snp.remakeConstraints { (make) in
             make.centerX.equalTo(self)
             make.bottom.equalTo(self.nameLabel.snp.top).offset(-10)
-            make.width.height.equalTo(80 - (275 - self.frame.size.height) * 0.4)
-            imgView.layer.cornerRadius = (80 - (275 - self.frame.size.height) * 0.4) * 0.5
+            let width = self.frame.size.height == 0 ? 0 : (80 - (275 - self.frame.size.height) * 0.4)
+            make.width.height.equalTo(width)
+            imgView.layer.cornerRadius = (width) * 0.5
             imgView.layer.masksToBounds = true
         }
         
         nameLabel.font = font
-        print((24 - (275 - self.frame.size.height) * 0.08))
         nameLabel.snp.remakeConstraints { (make) in
             make.centerX.equalTo(self)
             make.bottom.equalTo(messageBtn.snp.top).offset(-10)
