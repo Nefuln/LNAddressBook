@@ -13,10 +13,17 @@ class LNContactCommonAddView: UIView {
     public var editBlock: ((_ addView: LNContactCommonAddView) -> Void)?
     public var deleteBlock: ((_ addView: LNContactCommonAddView) -> Void)?
     
+    public var inputText: String? {
+        get {
+            return inputField.text
+        }
+    }
+    
     // MARK:- Public
-    public func set(tagTitle: String?, placeholder: String?) {
+    public func set(tagTitle: String?, placeholder: String?, text: String? = "") {
         tagBtn.setTitle(tagTitle ?? "电话", for: .normal)
         inputField.placeholder = placeholder ?? "电话"
+        inputField.text = text
     }
     
     public func isEditing(_ isEditing: Bool) {

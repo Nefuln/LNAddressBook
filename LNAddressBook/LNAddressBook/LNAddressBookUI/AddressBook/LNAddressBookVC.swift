@@ -48,6 +48,7 @@ class LNAddressBookVC: UIViewController {
         super.viewDidLoad()
         initUI()
         getAllContacts()
+        addObserver()
     }
     
     // MARK:- Private func 
@@ -90,7 +91,7 @@ class LNAddressBookVC: UIViewController {
     /**
      * 异步获取所有联系人
      */
-    private func getAllContacts() {
+    fileprivate func getAllContacts() {
         ManContactManager.manager.getAllContactsByOrder {[weak self] (access, data) in
             if access == false {
                 print("没有权限")
@@ -139,6 +140,10 @@ class LNAddressBookVC: UIViewController {
 
 extension LNAddressBookVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
+        reloadData()
+    }
+    
+    fileprivate func reloadData() {
         query(str: searchController.searchBar.text!) { [weak self] (contacts) -> Void? in
             //回到主线程更新UI
             DispatchQueue.main.async {
@@ -149,7 +154,7 @@ extension LNAddressBookVC: UISearchResultsUpdating {
         }
     }
     
-    private func query(str: String, result: @escaping ([CNContact]?) -> Void? ) {
+    fileprivate func query(str: String, result: @escaping ([CNContact]?) -> Void? ) {
         
         if allContacts == nil {
             result(nil)
@@ -200,6 +205,14 @@ extension LNAddressBookVC: UISearchResultsUpdating {
         
         return false
     }
-    
-    
+}
+
+extension LNAddressBookVC {
+    fileprivate func addObserver() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: kLNContactOperationCompletion), object: nil, queue: OperationQueue.main) { [weak self] (noti) in
+            if let weakSelf = self {
+                weakSelf.getAllContacts()
+            }
+        }
+    }
 }

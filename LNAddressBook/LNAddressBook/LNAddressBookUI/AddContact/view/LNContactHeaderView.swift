@@ -7,8 +7,28 @@
 //
 
 import UIKit
+import Contacts
 
 class LNContactHeaderView: UIView {
+    
+    public func set(contact: CNContact?) {
+        if contact == nil {
+            return
+        }
+        
+        let img: UIImage? = contact!.thumbnailImageData != nil ? UIImage(data: contact!.thumbnailImageData!) : nil
+        if img != nil {
+            addPhotoBtn.setBackgroundImage(img, for: .normal)
+            addPhotoBtn.setTitle(nil, for: .normal)
+
+        } else {
+            addPhotoBtn.setTitle("添加\n照片", for: .normal)
+        }
+        
+        self.familyNameView.textField.text = contact?.familyName
+        self.givenNameView.textField.text = contact?.givenName
+        self.companyView.textField.text = contact?.organizationName
+    }
     
     // MARK:- Public property
     var addPhotoBtn: UIButton = {
@@ -24,7 +44,25 @@ class LNContactHeaderView: UIView {
         btn.layer.masksToBounds = true
         return btn
     }()
-
+    
+    public var familyName: String {
+        get {
+            return self.familyNameView.textField.text ?? ""
+        }
+    }
+    
+    public var givenName: String {
+        get {
+            return self.givenNameView.textField.text ?? ""
+        }
+    }
+    
+    public var companyName: String {
+        get {
+            return self.companyView.textField.text ?? ""
+        }
+    }
+    
     // MARK:- Override
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,6 +81,7 @@ class LNContactHeaderView: UIView {
         addSubview(familyNameView)
         addSubview(givenNameView)
         addSubview(companyView)
+
     }
     
     private func layout() {
@@ -105,3 +144,5 @@ class LNContactHeaderView: UIView {
     }()
 
 }
+
+

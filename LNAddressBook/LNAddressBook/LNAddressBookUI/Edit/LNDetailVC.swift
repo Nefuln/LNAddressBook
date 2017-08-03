@@ -88,6 +88,12 @@ class LNDetailVC: UIViewController {
      */
     private func edit() {
         let editVC = LNAddContactVC()
+        editVC.set(contact: self.contact)
+        editVC.refreshBlock = { [weak self] in
+            if let weakSelf = self {
+                weakSelf.navigationController?.popViewController(animated: true)
+            }
+        }
         let navi = UINavigationController(rootViewController: editVC)
         navi.modalTransitionStyle = .crossDissolve
         present(navi, animated: true, completion: nil)

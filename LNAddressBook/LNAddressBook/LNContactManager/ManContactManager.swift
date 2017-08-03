@@ -34,24 +34,6 @@ class ManContactManager: NSObject, CNContactPickerDelegate {
     // MARK:- 获取所有联系人信息
     //创建通讯录对象
     var keys = [
-//        CNContactIdentifierKey,
-//        CNContactNamePrefixKey,
-//        CNContactMiddleNameKey,
-//        CNContactPreviousFamilyNameKey,
-//        CNContactNameSuffixKey,
-//        CNContactFamilyNameKey,             //姓
-//        CNContactGivenNameKey,              //名
-//        CNContactNicknameKey,               //昵称
-//        CNContactBirthdayKey,               //生日
-//        CNContactOrganizationNameKey,       //组织名称
-//        CNContactJobTitleKey,               //职业
-//        CNContactDepartmentNameKey,         //部门
-//        CNContactNoteKey,                   //备注
-//        CNContactPhoneNumbersKey,           //电话
-//        CNContactEmailAddressesKey,         //email
-//        CNContactPostalAddressesKey,        //邮编
-//        CNContactDatesKey,                  //纪念日
-//        CNContactInstantMessageAddressesKey //即时通讯地址
     CNContactIdentifierKey,
     CNContactNamePrefixKey,
     CNContactGivenNameKey,
